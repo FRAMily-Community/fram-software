@@ -133,5 +133,6 @@ FRAMifier is a standalone browser-based modelling and alternative simulation env
 - Abstraction/Agency and Space-Time/Agency matrices
 - Path visualisation beyond direct couplings
 - Real-time exchange with other tools, simulators, or Digital Twin applications
+- AI-assisted functionality to support modelling, analysis, interpretation, and exploration
 
 FRAMLab is currently described as a work-in-progress research platform. Features, interfaces, compatibility, documentation, and availability may change during development. A first release is planned for Q4, 2026.
