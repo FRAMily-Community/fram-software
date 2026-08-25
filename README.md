@@ -43,6 +43,25 @@ The tools presented here cover different stages of the FRAM modelling workflow, 
 | **FRAMifier** | Standalone browser-based model creation, multi-level abstraction, expressions, metadata, and dynamic simulation | HTML, CSS, and JavaScript | [Access FRAMifier, source code, and documentation](https://github.com/pwgbots/framifier) | Bots, P. W. G., & Adriaensen, A. (2025). *Semantical challenges in FRAM while developing the FRAMifier.* 17th FRAMily and 7th International Workshop on Safety-II in Practice. [View DOI record](https://doi.org/10.5281/zenodo.15632732) See also: Bots, P. W. G. (2025). *FRAMifier: A graphical editor and simulation tool in support of the Functional Resonance Analysis Method.* [View the GitHub repository](https://github.com/pwgbots/framifier) |
 | **FRAMLab** | Standalone next-generation platform for model creation, dynamic simulation, advanced analytics, what-if analysis, and integration | Browser-based open-source research platform; work in progress; developed at the TUM Chair of Ergonomics | Public GitHub repository in preparation | **Citation forthcoming.** FRAMLab is currently a work-in-progress research platform; a recommended scientific citation has not yet been specified. |
 
+## Model Exchange and Interoperability
+
+As FRAM continues to evolve, methodological and software innovation will naturally lead to a growing diversity of tools and approaches. To keep both new and legacy models accessible across the community, a common software-independent exchange format is essential.
+
+The FRAMily Community proposes the `.xfmv` specification and its documented GitHub data structure as the canonical exchange format for FRAM models.
+
+FRAM-compatible software may use its own internal data representation, provided that it can import and export conformant `.xfmv` files without altering or losing the model's:
+
+- Functional structure
+- Semantics
+- Function and coupling identifiers
+- Six FRAM aspects
+- Couplings
+- Metadata
+
+This approach allows tools to innovate independently while supporting interoperability, reproducibility, model preservation, and exchange across the FRAM software ecosystem.
+
+For the current specification and file-structure documentation, consult the `.xfmv` documentation provided through the FMV sources linked in this repository.
+
 ---
 
 ## Choosing a Tool
@@ -61,8 +80,6 @@ A key distinction concerns whether a tool can be used as a standalone FRAM model
 | **FRAMalyse** | Quantitative structural analysis and model comparison | No | Requires a model previously created in FMV |
 | **FRAMifier** | Browser-based modelling and simulation environment | Yes | Standalone alternative modelling environment |
 | **FRAMLab** | Next-generation browser-based modelling, simulation, and analytics platform | Yes | Standalone platform built on FMV concepts and intended to remain compatible with existing FMV models |
-
----
 
 ### Start with FMV if you want to:
 
@@ -136,3 +153,91 @@ FRAMifier is a standalone browser-based modelling and alternative simulation env
 - AI-assisted functionality to support modelling, analysis, interpretation, and exploration
 
 FRAMLab is currently described as a work-in-progress research platform. Features, interfaces, compatibility, documentation, and availability may change during development. A first release is planned for Q4, 2026.
+
+---
+
+## Suggest a New Tool
+
+Developers, maintainers, and community members are welcome to propose additional FRAM-related software for inclusion in this catalogue.
+
+### Preferred submission process
+
+1. Fork this repository
+2. Add the tool using the tool-entry template below
+3. Include official access links, documentation, maintenance status, compatibility information, and relevant publications
+4. Submit a pull request for community review
+
+All submissions will be reviewed by the FRAMily stewards before inclusion.
+
+If you are unfamiliar with GitHub or unable to submit a pull request, you may send the relevant information and official links by email to [n.grabbe@tum.de](mailto:n.grabbe@tum.de).
+
+Submission does not guarantee inclusion. Tools will be reviewed for relevance, documentation quality, transparency, accessibility, and alignment with the purpose of this catalogue.
+
+--> **Tool-Entry Template**
+
+# Tool Name
+## Overview
+
+Provide a concise description of the tool and its purpose.
+
+Explain what the tool supports within FRAM research, education, or practice.
+
+## Key Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+- Feature 4
+
+## Intended Use
+
+Describe the primary use cases of the tool.
+
+Examples:
+
+- Creating and editing FRAM models
+- Visualising functional couplings
+- Supporting qualitative or quantitative analysis
+- Teaching and training
+- Documenting case studies
+- Simulating system behaviour
+
+## Target Users
+
+- Researchers
+- Practitioners
+- Educators
+- Students
+- Developers
+
+## Access
+
+**Availability:** Public / Restricted / In preparation / Discontinued
+
+**Repository or website:**  
+[Access the tool](INSERT-URLation
+
+- [UserT-URL-HERE
+- [InstallationRE
+- [Tutorials](INSERT-URL-HEREL-HERE
+
+Remove links that are not available.
+
+## Technical Information
+
+- **Developer or maintainer:** Name or organisation
+- **Current version:** Version number or “Not specified”
+- **Operating system:** Windows / macOS / Linux / Web-based
+- **Programming language:** If applicable
+- **File formats:** If applicable
+- **License:** License name or “Not specified”
+- **Source code available:** Yes / No
+- **Last verified:** YYYY-MM-DD
+
+## Citation
+
+If a recommended citation is available, provide it here.
+
+```text
+Author(s). (Year). Tool name (Version). Publisher or repository.
+DOI or URL
